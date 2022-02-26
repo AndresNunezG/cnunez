@@ -4,18 +4,9 @@ import HeaderBar from "@/components/HeaderBar/Index.vue"
 </script>
 
 <template>
-  <HeaderBar />
   <header>
-    <div class="wrapper">
-      <h1 class="fw-bolder font-m">Andrés <br> Camilo.</h1>
-      <p>Hi! i'm a <span>software developer enginner</span> from Bogotá</p>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
+    <HeaderBar />
   </header>
-
   <RouterView />
   <FooterBar />
 </template>
