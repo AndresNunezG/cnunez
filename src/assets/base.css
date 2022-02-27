@@ -22,7 +22,9 @@
 
   --br-10: 14px;
   --fg-hover-color: #FFFFFF;
+  --white-1: #FFFFFF;
   --green-1: #41B883;
+  --purple-1: #6288F2;
 }
 
 /* semantic color variables for this project */
@@ -51,6 +53,10 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+    
+    
+    --vt-font-family-base: "Inter", sans-serif;
+    --vt-font-family-mono: Menlo, Monaco, Consolas, "Courier New", monospace;
   }
 }
 
@@ -59,29 +65,72 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   position: relative;
   font-weight: normal;
+  transition-duration: 0.2s !important;
+  font-family: var(--vt-font-family-base);
+  box-sizing: border-box;
 }
 
 body {
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
-  transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
   font-size: 15px;
+  letter-spacing: -0.5px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  min-height: 100vh;
 }
 
 hr {
   margin: 0;
 }
 
+/* custom components */
+.btn-custom {
+  all: unset;
+  padding: 0.5rem 1rem;
+  border-radius: var(--br-10);
+  border: solid 1px;
+}
+
+.btn-custom--border-green {
+  border-color: var(--green-1);
+}
+
+.btn-custom:hover {
+  background-color: var(--green-1);
+  border-color: var(--green-1);
+  color: var(--fg-hover-color);
+}
+
+/* Main Layout */
+#app,
+.main-layout {
+  min-height: 100vh;
+}
+
+.main-layout__header {
+  max-height: 10vh;
+}
+
+.main-layout__content {
+  min-height: 80vh;
+}
+
+.main-layout__footer {
+  min-height: 10vh;
+}
+
 /* Header */
-.header {
+.header,
+.footer {
   min-width: 100%;
 }
 .navbar-items__item a {
@@ -93,11 +142,12 @@ hr {
   all: unset;
   padding: 0.5rem 1rem;
   border-radius: var(--br-10);
-  border: solid 1px var(--green-1);
+  border: solid 1px var(--purple-1);
 }
 
 .navbar-items__item-btn:hover {
   background-color: var(--green-1);
+  border-color: var(--green-1);
   color: var(--fg-hover-color);
 }
 
@@ -109,4 +159,24 @@ hr {
 .icon-size-lg {
   width: 2rem !important;
   height: 2rem !important;
+}
+
+/* Home */
+.home__title {
+  width: fit-content;
+  font-size: calc(3rem + 1.5vw);
+  background-image: linear-gradient(315deg, var(--green-1) 30%, var(--purple-1));
+  background-clip: text;
+  letter-spacing: -0.5px;
+  font-weight: 900;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.home__subtitle {
+  font-size: calc(0.4rem + 1.5vw);
+}
+
+.home__subtitle span:nth-child(2) {
+  color: var(--green-1);
 }

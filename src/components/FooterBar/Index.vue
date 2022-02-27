@@ -1,5 +1,8 @@
 <template>
-  <FooterLinks />
+  <hr>
+  <div class="container footer">
+    <FooterLinks />
+  </div>
 </template>
 
 <script>
