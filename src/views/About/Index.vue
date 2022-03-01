@@ -1,3 +1,9 @@
+<script setup>
+import Techstack from './Techstack.vue'
+import About from './About.vue'
+</script>
+
 <template>
-    <h1>About</h1>    
+    <About />
+    <Techstack />
 </template>

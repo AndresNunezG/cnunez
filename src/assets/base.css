@@ -67,7 +67,7 @@
   margin: 0;
   position: relative;
   font-weight: normal;
-  transition-duration: 0.2s !important;
+  transition: background-color .2s !important;
   font-family: var(--vt-font-family-base);
   box-sizing: border-box;
 }
@@ -90,6 +90,15 @@ body {
 
 hr {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
 }
 
 /* custom components */
@@ -132,10 +141,6 @@ hr {
 .header,
 .footer {
   min-width: 100%;
-}
-.navbar-items__item a {
-  color: unset;
-  text-decoration: none;
 }
 
 .navbar-items__item-btn {

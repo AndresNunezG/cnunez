@@ -8,8 +8,10 @@ import FooterBar from '@/components/FooterBar/Index.vue'
         <div class="main-layout__header">
             <HeaderBar />
         </div>
-        <div class="main-layout__content px-3 py-5">
-            <RouterView />
+        <div class="container">
+            <div class="main-layout__content px-3 py-5">
+                <RouterView />
+            </div>
         </div>
         <div class="main-layout__footer d-flex align-items-center">
             <FooterBar />    
