@@ -11,11 +11,13 @@ const tools = [
 ]
 
 const techstack = [
-  {slugName: "python", icon: ['fab', 'python']},
-  {slugName: "javascript", icon: ['fab', 'js']},
-  {slugName: "database", icon: ['fa', 'database']},
-  {slugName: "html5", icon: ['fab', 'html5']},
-  {slugName: "css3", icon: ['fab', 'css3']},
+  {slugName: "python", name:"Python", borderColor: "#3473A6"},
+  {slugName: "javascript", name:"JavaScript", borderColor: "#FFCD3C"},
+  {slugName: "django", name:"django", borderColor: "#127C54"},
+  {slugName: "vue",  name:"Vue", borderColor: "#42B883"},
+  {slugName: "postgreql", name:"PostgreSQL", borderColor: "#336790"},
+  {slugName: "html", name:"HTML5", borderColor: "#F26524"},
+  {slugName: "css", name:"CSS3", borderColor: "#00ABE4"},
 ]
 
 export {

@@ -1,5 +1,5 @@
 <template>
-    <h1>About</h1>
+    <h2 class="section__subtitle">About</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Vero sit deleniti temporibus laudantium ipsa sequi, sapiente
         cum quia debitis ad vitae nihil ut architecto consequuntur facilis

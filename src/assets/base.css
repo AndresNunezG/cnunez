@@ -20,7 +20,7 @@
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
-  --br-10: 14px;
+  --br-14: 14px;
   --fg-hover-color: #FFFFFF;
   --white-1: #FFFFFF;
   --green-1: #41B883;
@@ -101,11 +101,17 @@ a:hover {
   color: inherit;
 }
 
+.section__subtitle {
+  letter-spacing: -0.5px;
+  font-weight: 900;
+  font-size: calc(0.4rem + 1.5vw);
+}
+
 /* custom components */
 .btn-custom {
   all: unset;
   padding: 0.5rem 1rem;
-  border-radius: var(--br-10);
+  border-radius: var(--br-14);
   border: solid 1px;
 }
 
@@ -146,7 +152,7 @@ a:hover {
 .navbar-items__item-btn {
   all: unset;
   padding: 0.5rem 1rem;
-  border-radius: var(--br-10);
+  border-radius: var(--br-14);
   border: solid 1px var(--purple-1);
 }
 
@@ -184,4 +190,22 @@ a:hover {
 
 .home__subtitle span:nth-child(2) {
   color: var(--green-1);
+}
+
+/* Techstack */
+.tech-badge {
+  border: solid 2px var(--green-1);
+  border-radius: var(--br-14);
+  width: fit-content;
+}
+
+/* GithubProfile */
+.github-profile__image {
+  filter: grayscale(100%);
+  width: 10vw;
+}
+
+.github-profile__avatar {
+  width: fit-content;
+  border: solid 1px var(--green-1)
 }
