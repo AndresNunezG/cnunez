@@ -13,7 +13,7 @@ const tools = [
 const techstack = [
   {slugName: "python", name:"Python", borderColor: "#3473A6"},
   {slugName: "javascript", name:"JavaScript", borderColor: "#FFCD3C"},
-  {slugName: "django", name:"django", borderColor: "#127C54"},
+  {slugName: "django", name:"Django", borderColor: "#127C54"},
   {slugName: "vue",  name:"Vue", borderColor: "#42B883"},
   {slugName: "postgreql", name:"PostgreSQL", borderColor: "#336790"},
   {slugName: "html", name:"HTML5", borderColor: "#F26524"},

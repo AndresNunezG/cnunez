@@ -52,11 +52,7 @@
     --color-border-hover: var(--vt-c-divider-dark-1);
 
     --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-    
-    
-    --vt-font-family-base: "Inter", sans-serif;
-    --vt-font-family-mono: Menlo, Monaco, Consolas, "Courier New", monospace;
+    --color-text: var(--vt-c-text-dark-2);   
   }
 }
 
@@ -68,7 +64,7 @@
   position: relative;
   font-weight: normal;
   transition: background-color .2s !important;
-  font-family: var(--vt-font-family-base);
+  font-family: 'Inter', sans-serif;
   box-sizing: border-box;
 }
 
@@ -87,16 +83,13 @@ body {
 #app {
   min-height: 100vh;
 }
-
 hr {
   margin: 0;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
 a:hover {
   color: inherit;
 }
@@ -114,15 +107,19 @@ a:hover {
   border-radius: var(--br-14);
   border: solid 1px;
 }
-
 .btn-custom--border-green {
   border-color: var(--green-1);
 }
-
 .btn-custom:hover {
   background-color: var(--green-1);
   border-color: var(--green-1);
   color: var(--fg-hover-color);
+}
+.monospace div,
+.monospace p,
+.monospace h3,
+.monospace span {
+  font-family: 'Roboto Mono', monospace !important;
 }
 
 /* Main Layout */
@@ -130,15 +127,12 @@ a:hover {
 .main-layout {
   min-height: 100vh;
 }
-
 .main-layout__header {
   max-height: 10vh;
 }
-
 .main-layout__content {
   min-height: 80vh;
 }
-
 .main-layout__footer {
   min-height: 10vh;
 }
@@ -148,14 +142,12 @@ a:hover {
 .footer {
   min-width: 100%;
 }
-
 .navbar-items__item-btn {
   all: unset;
   padding: 0.5rem 1rem;
   border-radius: var(--br-14);
   border: solid 1px var(--purple-1);
 }
-
 .navbar-items__item-btn:hover {
   background-color: var(--green-1);
   border-color: var(--green-1);
@@ -183,11 +175,9 @@ a:hover {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-
 .home__subtitle {
   font-size: calc(0.4rem + 1.5vw);
 }
-
 .home__subtitle span:nth-child(2) {
   color: var(--green-1);
 }
@@ -200,11 +190,14 @@ a:hover {
 }
 
 /* GithubProfile */
+.github-profile {
+  border: solid 2px var(--color-border);
+  border-radius: var(--br-14);
+}
 .github-profile__image {
   filter: grayscale(100%);
   width: 10vw;
 }
-
 .github-profile__avatar {
   width: fit-content;
   border: solid 1px var(--green-1)

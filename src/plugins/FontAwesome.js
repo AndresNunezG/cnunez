@@ -1,6 +1,13 @@
 import { library } from "@fortawesome/fontawesome-svg-core"
-import { faDatabase } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
+
+import {
+    faDatabase,
+    faBuilding,
+    faBook,
+    faLocationDot,
+    } 
+    from "@fortawesome/free-solid-svg-icons"
 
 import { 
     faGithub,
@@ -9,10 +16,6 @@ import {
     faBootstrap,
     faVuejs,
     faFontAwesome,
-    faPython,
-    faJs,
-    faCss3,
-    faHtml5,
     } 
     from "@fortawesome/free-brands-svg-icons"
 
@@ -24,10 +27,9 @@ library.add(
     faBootstrap,
     faVuejs,
     faFontAwesome,
-    faPython,
-    faJs,
-    faCss3,
-    faHtml5,
+    faBuilding,
+    faBook,
+    faLocationDot,
 )
 
 export default FontAwesomeIcon

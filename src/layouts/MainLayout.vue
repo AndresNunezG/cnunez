@@ -13,7 +13,7 @@ import FooterBar from '@/components/FooterBar/Index.vue'
                 <RouterView />
             </div>
         </div>
-        <div class="main-layout__footer d-flex align-items-center">
+        <div class="main-layout__footer d-flex align-items-center px-md-4 px-2">
             <FooterBar />    
         </div>
     </div>
