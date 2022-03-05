@@ -97,7 +97,7 @@ a:hover {
 .section__subtitle {
   letter-spacing: -0.5px;
   font-weight: 900;
-  font-size: calc(0.4rem + 1.5vw);
+  font-size: calc(1rem + 1vw);
 }
 
 /* custom components */
@@ -176,7 +176,7 @@ a:hover {
 	-webkit-text-fill-color: transparent;
 }
 .home__subtitle {
-  font-size: calc(0.4rem + 1.5vw);
+  font-size: calc(1rem + 1vw);
 }
 .home__subtitle span:nth-child(2) {
   color: var(--green-1);
@@ -221,6 +221,10 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
+  /* Home */
+  .home__subtitle {
+    max-width: 75%;
+  }
   /* GithubProfile */
   .github-profile__image {
     width: 10vw;
@@ -239,6 +243,17 @@ a:hover {
 }
 
 @media (max-width: 767px) {
+  /* Home */
+  .home__title {
+    text-align: center;
+  }
+  .home__subtitle {
+    width: 100%;
+    text-align: center;
+  }
+  .home__button {
+    text-align: center;
+  }
   /* UserMiniatures */
   .miniature-avatar {
     width: 10vw;

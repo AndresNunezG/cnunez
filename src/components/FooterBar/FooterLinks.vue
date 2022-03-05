@@ -15,7 +15,7 @@
     </div>
   </div>
   <div class="row">
-    <span class="text-muted text-md-end text-center px-4">@_camsky</span>
+    <span class="text-muted text-md-end text-center px-4 pb-sm-0 pb-2">@_camsky</span>
   </div>
 </template>
 
