@@ -16,8 +16,10 @@ const techstack = [
   {slugName: "django", name:"Django", borderColor: "#127C54"},
   {slugName: "vue",  name:"Vue", borderColor: "#42B883"},
   {slugName: "postgreql", name:"PostgreSQL", borderColor: "#336790"},
+  {slugName: "aws", name:"AWS", borderColor: "#FFCD3C"},
   {slugName: "html", name:"HTML5", borderColor: "#F26524"},
   {slugName: "css", name:"CSS3", borderColor: "#00ABE4"},
+  {slugName: "git", name:"Git", borderColor: "#F26524"},
 ]
 
 export {

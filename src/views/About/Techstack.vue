@@ -1,5 +1,5 @@
 <template>
-    <h2 class="section__subtitle">Teckstack</h2>
+    <h2 class="section__subtitle text-center">Teckstack</h2>
     <div class="row justify-content-center">
         <div
             v-for="tech in techstack"
