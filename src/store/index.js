@@ -3,12 +3,12 @@ import { createStore } from "vuex";
 const store = createStore({
   state() {
     return {
-      count: 0,
+      view: '',
     };
   },
   mutations: {
-    increment(state) {
-      state.count++;
+    changeView(state, payload) {
+      state.view = payload;
     },
   },
 });
