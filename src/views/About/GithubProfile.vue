@@ -48,21 +48,24 @@
             </div>
         </div>
     </div>
+    <GithubProfilePH v-else />
 </template>
 
 <script>
 import { get } from 'axios'
+import GithubProfilePH from './GithubProfilePH.vue'
 import UserMiniatures from './UserMiniatures.vue'
 
 export default {
     name: 'GithubProfile',
     components: {
-        UserMiniatures
+        UserMiniatures,
+        GithubProfilePH,
     },
     data () {
         return {
             profileData: undefined,
-            loadingProfile: false,
+            loadingProfile: true,
             error: null
         }
     },
@@ -103,7 +106,7 @@ export default {
         }
     },
     created () {
-        this.getProfile()
+        setTimeout(() => this.getProfile(), 1000)
         setTimeout(() => {
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

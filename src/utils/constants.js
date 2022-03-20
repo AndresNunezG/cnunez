@@ -20,6 +20,7 @@ const techstack = [
   {slugName: "html", name:"HTML5", borderColor: "#F26524"},
   {slugName: "css", name:"CSS3", borderColor: "#00ABE4"},
   {slugName: "git", name:"Git", borderColor: "#F26524"},
+  {slugName: "github", name:"GitHub", borderColor: "#336790"},
 ]
 
 export {

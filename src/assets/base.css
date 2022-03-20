@@ -94,6 +94,11 @@ a:hover {
   color: inherit;
 }
 
+.home__subtitle-text {
+  letter-spacing: -0.2px;
+  font-weight: 700;
+}
+
 .section__subtitle {
   letter-spacing: -0.5px;
   font-weight: 900;
