@@ -3,15 +3,20 @@ import HeaderLinks from './HeaderLinks.vue'
 </script>
 
 <template>
-    <div class="container header m-0 py-4">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-6">
-                <font-awesome-icon :icon="['fa', 'cube']"></font-awesome-icon>
+    <nav class="navbar navbar-expand-lg py-3 px-4">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <RouterLink :to="{ name: 'Home' }" class="d-flex">
+                    <font-awesome-icon :icon="['fa', 'cube']" :style="{height: '25px'}"></font-awesome-icon>
+                    <h1 class="ms-2 mb-0 fs-4 section__subtitle">camsky</h1>
+                </RouterLink>
             </div>
-            <div class="col-md-6">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <font-awesome-icon :icon="['fa', 'bars']" :style="{height: '25px'}"></font-awesome-icon>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <HeaderLinks />
             </div>
         </div>
-    </div>
-    <hr>
+    </nav>
 </template>

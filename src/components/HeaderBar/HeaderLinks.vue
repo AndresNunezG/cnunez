@@ -1,16 +1,16 @@
 <template>
-    <ul class="navbar-items m-0 list-unstyled d-flex justify-content-evenly align-items-center">
-        <li class="navbar-items__item">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 list-unstyled d-flex align-items-center">
+        <li class="navbar-items__item ms-0 ms-auto nav-item">
             <RouterLink :to="{ name: 'Home' }"><span :class="classCurrentView('Home')">Home</span></RouterLink>
         </li>
-        <li class="navbar-items__item">
+        <li class="navbar-items__item ms-0 ms-auto nav-item">
             <RouterLink :to="{ name: 'About' }"><span :class="classCurrentView('About')">About</span></RouterLink>
         </li>
-        <li class="navbar-items__item">
+        <li class="navbar-items__item ms-0 ms-auto nav-item">
             <RouterLink :to="{ name: 'Contact' }"><span :class="classCurrentView('Contact')">Contact</span></RouterLink>
         </li>
-        <li class="navbar-items__item">
-            <button class="btn-custom btn-custom--border-green">
+        <li class="navbar-items__item ms-0 ms-auto nav-item px-lg-3 px-0">
+            <button class="btn-custom px-3 py-1 btn-custom--border-green">
                 <RouterLink :to="{ name: 'Projects' }">
                     Projects
                 </RouterLink>

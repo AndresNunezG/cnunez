@@ -8,7 +8,8 @@ import {
     faLocationDot,
     faCode,
     faCube,
-    faUser
+    faUser,
+    faBars,
     } 
     from "@fortawesome/free-solid-svg-icons"
 
@@ -38,6 +39,7 @@ library.add(
     faCube,
     faUser,
     faGithubAlt,
+    faBars,
 )
 
 export default FontAwesomeIcon
