@@ -38,8 +38,6 @@
 
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,7 +64,6 @@
   transition: background-color .2s !important;
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
-
   /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -197,6 +194,20 @@ a:hover {
 }
 .home__subtitle span:nth-child(2) {
   color: var(--green-1);
+}
+
+/* About */
+.about-sphere {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(90deg, var(--green-1), var(--purple-1));
+}
+
+.about-line {
+  height: 50px;
+  width: 1px;
+  content: "   ";
+  background: linear-gradient(var(--color-background), var(--purple-1));
 }
 
 /* Techstack */

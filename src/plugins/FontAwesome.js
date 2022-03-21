@@ -6,7 +6,9 @@ import {
     faBuilding,
     faBook,
     faLocationDot,
-    faCode
+    faCode,
+    faCube,
+    faUser
     } 
     from "@fortawesome/free-solid-svg-icons"
 
@@ -17,6 +19,7 @@ import {
     faBootstrap,
     faVuejs,
     faFontAwesome,
+    faGithubAlt,
     } 
     from "@fortawesome/free-brands-svg-icons"
 
@@ -31,7 +34,10 @@ library.add(
     faBuilding,
     faBook,
     faLocationDot,
-    faCode
+    faCode,
+    faCube,
+    faUser,
+    faGithubAlt,
 )
 
 export default FontAwesomeIcon

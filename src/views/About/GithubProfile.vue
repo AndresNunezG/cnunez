@@ -1,5 +1,12 @@
 <template>
-    <div class="github-profile py-3 px-2 monospace mt-4 mb-5" v-if="!loadingProfile">
+    <div class="d-flex flex-column justify-content-center align-items-center mt-2">
+        <span class="about-line"></span>
+        <div class="about-sphere rounded-circle d-flex justify-content-center align-items-center">
+            <font-awesome-icon :icon="['fab', 'github-alt']" :style="{ color: '#FFFFFF'}"></font-awesome-icon>
+        </div>
+    </div>
+    <h2 class="section__subtitle text-center mt-2">Github Profile</h2>
+    <div class="github-profile py-3 px-2 monospace mt-4 mb-3" v-if="!loadingProfile">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 col-12">
                 <div class="row align-items-center">

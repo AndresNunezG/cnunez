@@ -6,6 +6,6 @@ import GithubProfile from './GithubProfile.vue'
 
 <template>
     <About />
-    <Techstack />
     <GithubProfile />
+    <Techstack />
 </template>
