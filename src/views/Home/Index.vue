@@ -8,9 +8,7 @@
             <span class="home__subtitle-text">,&nbsp;currently building mighty things with top practices that improve human - tech relationship All this from Colombia remotely based.</span>
         </div>
         <div class="mt-4 home__button">
-            <button class="btn-custom px-3 py-2">
-                <RouterLink to="contact">Get in touch</RouterLink>
-            </button>
+            <RouterLink to="contact" :class="'btn-custom-app'">Get in touch</RouterLink>
         </div>
     </div>
 </template>

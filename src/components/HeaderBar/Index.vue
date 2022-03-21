@@ -11,8 +11,9 @@ import HeaderLinks from './HeaderLinks.vue'
                     <h1 class="ms-2 mb-0 fs-4 section__subtitle">camsky</h1>
                 </RouterLink>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <font-awesome-icon :icon="['fa', 'bars']" :style="{height: '25px'}"></font-awesome-icon>
+            <button class="navbar-toggler" @click="toggleMenuIcon = !toggleMenuIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <font-awesome-icon v-if="toggleMenuIcon" :icon="['fa', 'bars']" :style="{height: '25px', color: '#DDD'}"></font-awesome-icon>
+                <font-awesome-icon v-else :icon="['fa', 'x']" :style="{height: '25px', color: '#DDD'}"></font-awesome-icon>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <HeaderLinks />
@@ -20,3 +21,13 @@ import HeaderLinks from './HeaderLinks.vue'
         </div>
     </nav>
 </template>
+
+<script>
+export default {
+    data () {
+        return {
+            toggleMenuIcon: true
+        }
+    },
+}
+</script>

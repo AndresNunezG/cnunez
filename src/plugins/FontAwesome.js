@@ -10,6 +10,7 @@ import {
     faCube,
     faUser,
     faBars,
+    faX
     } 
     from "@fortawesome/free-solid-svg-icons"
 
@@ -40,6 +41,7 @@ library.add(
     faUser,
     faGithubAlt,
     faBars,
+    faX,
 )
 
 export default FontAwesomeIcon

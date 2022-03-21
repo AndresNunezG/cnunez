@@ -10,11 +10,9 @@
             <RouterLink :to="{ name: 'Contact' }"><span :class="classCurrentView('Contact')">Contact</span></RouterLink>
         </li>
         <li class="navbar-items__item ms-0 ms-auto nav-item px-lg-3 px-0">
-            <button class="btn-custom px-3 py-1 btn-custom--border-green">
-                <RouterLink :to="{ name: 'Projects' }">
-                    Projects
-                </RouterLink>
-            </button>
+            <RouterLink :to="{ name: 'Projects' }" :class="'btn-custom-app btn-custom--border-green'">
+                Projects
+            </RouterLink>
         </li>
     </ul>
 </template>

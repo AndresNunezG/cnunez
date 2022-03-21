@@ -112,18 +112,22 @@ a:hover {
 }
 
 /* custom components */
-.btn-custom {
-  all: unset;
+.btn-custom-app {
   border-radius: var(--br-14);
+  color: var(--color-text);
   border: solid 1px;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
 }
 .btn-custom--border-green {
   border-color: var(--green-1);
 }
-.btn-custom:hover {
+.btn-custom-app:hover {
   background-color: var(--green-1);
   border-color: var(--green-1);
-  color: var(--fg-hover-color);
+}
+.btn-custom-app:hover {
+  color: var(--fg-hover-color) !important;
 }
 .monospace div,
 .monospace p,
@@ -131,6 +135,10 @@ a:hover {
 .monospace span {
   font-family: 'Roboto Mono', monospace !important;
 }
+button.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
 
 /* Main Layout */
 #app,
@@ -149,7 +157,7 @@ a:hover {
 
 /* Header */
 .navbar {
-  background-color: white;
+  background-color: inherit;
   border-bottom: solid 1px var(--color-background-mute);
 }
 .navbar-items__item {
@@ -278,7 +286,11 @@ a:hover {
 @media (max-width: 1024px) {
   /* Header */
   .navbar-items__item {
-    margin-top: 8px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .btn-custom-app {
+    margin-top: 10rem !important;
   }
 }
 

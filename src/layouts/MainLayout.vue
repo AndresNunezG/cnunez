@@ -9,7 +9,7 @@ import FooterBar from '@/components/FooterBar/Index.vue'
             <HeaderBar />
         </div>
         <div class="container">
-            <div class="main-layout__content px-3 py-md-3">
+            <div class="main-layout__content px-3 py-md-3 pt-4 pb-md-4 pb-5">
                 <RouterView />
             </div>
         </div>
