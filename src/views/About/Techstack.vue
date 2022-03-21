@@ -1,5 +1,5 @@
 <template>
-    <h2 class="section__subtitle text-center">Teckstack</h2>
+    <h2 class="section__subtitle text-center"><font-awesome-icon :icon="['fa', 'code']"></font-awesome-icon>&nbsp;Teckstack</h2>
     <div class="row justify-content-center">
         <div
             v-for="tech in techstack"
@@ -7,6 +7,7 @@
             :title="tech.slugName"
             class="tech-badge px-3 py-1 fw-bold d-inline-block mx-2 my-2"
             :style="{'border-color': tech.borderColor}"
+            v-pointer
         >
             {{ tech.name }}
         </div>

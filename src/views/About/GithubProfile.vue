@@ -1,5 +1,5 @@
 <template>
-    <div class="github-profile py-3 px-2 monospace mt-3 mb-5" v-if="!loadingProfile">
+    <div class="github-profile py-3 px-2 monospace mt-4 mb-5" v-if="!loadingProfile">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 col-12">
                 <div class="row align-items-center">

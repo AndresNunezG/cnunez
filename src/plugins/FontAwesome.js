@@ -6,6 +6,7 @@ import {
     faBuilding,
     faBook,
     faLocationDot,
+    faCode
     } 
     from "@fortawesome/free-solid-svg-icons"
 
@@ -30,6 +31,7 @@ library.add(
     faBuilding,
     faBook,
     faLocationDot,
+    faCode
 )
 
 export default FontAwesomeIcon
