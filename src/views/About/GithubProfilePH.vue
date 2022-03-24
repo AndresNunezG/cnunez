@@ -12,22 +12,22 @@
                         ></div>
                     </div>
                     <div class="placeholder-glow col-lg d-lg-block text-lg-start col-md-6 text-center">
-                        <p class="col-6 mb-lg-3 mt-md-0 mt-2 placeholder"></p>
+                        <p class="lh-21 col-6 mb-lg-3 mt-md-0 mt-2 placeholder">&nbsp;</p>
                         <p>
                             <font-awesome-icon :icon="['fa', 'location-dot']"></font-awesome-icon>
                             &nbsp;
-                            <span class="placeholder col-6"></span>
+                            <span class="lh-21 placeholder col-6"></span>
                         </p>
                         <p>
                             <font-awesome-icon :icon="['fa', 'building']"></font-awesome-icon>
                             &nbsp;
-                            <span class="placeholder col-6"></span>
+                            <span class="lh-21 placeholder col-6"></span>
                         </p>
                         <p>
                             <font-awesome-icon :icon="['fa', 'book']"></font-awesome-icon>
                             &nbsp;
                             <span class="text-decoration-underline">
-                                <span class="placeholder col-6"></span>
+                                <span class="lh-21 placeholder col-6"></span>
                             </span>
                         </p>
                     </div>

@@ -10,7 +10,9 @@ import {
     faCube,
     faUser,
     faBars,
-    faX
+    faX,
+    faLightbulb,
+    faMoon,
     } 
     from "@fortawesome/free-solid-svg-icons"
 
@@ -42,6 +44,8 @@ library.add(
     faGithubAlt,
     faBars,
     faX,
+    faLightbulb,
+    faMoon,
 )
 
 export default FontAwesomeIcon

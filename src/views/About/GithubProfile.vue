@@ -119,7 +119,7 @@ export default {
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
-        }, 2000)
+        }, 1200)
     }
 }
 </script>

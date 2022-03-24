@@ -28,7 +28,7 @@
 }
 
 /* semantic color variables for this project */
-:root {
+:root, :root.light {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -54,6 +54,18 @@
   }
 }
 
+:root.dark {
+  --color-background: var(--vt-c-black);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
+
+  --color-border: var(--vt-c-divider-dark-2);
+  --color-border-hover: var(--vt-c-divider-dark-1);
+
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-text: var(--vt-c-text-dark-2);   
+}
+
 *,
 *::before,
 *::after {
@@ -61,12 +73,14 @@
   margin: 0;
   position: relative;
   font-weight: normal;
-  /* transition: background-color .2s !important; */
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
+  /* color: var(--color-text); */
   /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  transition: color 200ms linear;
+  transition: background-color 200ms linear;
 }
 
 *::-webkit-scrollbar {
@@ -99,10 +113,13 @@ a {
 a:hover {
   color: inherit;
 }
-
+.home {
+  color: var(--color-text);
+}
 .home__subtitle-text {
   letter-spacing: -0.2px;
   font-weight: 700;
+  
 }
 
 .section__subtitle {
@@ -138,6 +155,9 @@ a:hover {
 button.navbar-toggler:focus {
   box-shadow: none !important;
 }
+.lh-21 {
+  line-height: 21px !important;
+}
 
 
 /* Main Layout */
@@ -156,12 +176,16 @@ button.navbar-toggler:focus {
 }
 
 /* Header */
+.navbar-brand {
+  color: var(--color-text);
+}
 .navbar {
   background-color: inherit;
   border-bottom: solid 1px var(--color-background-mute);
 }
 .navbar-items__item {
   padding: 0 1rem;
+  color: var(--color-text);
 }
 .navbar-items__item-selected {
   border-bottom: solid 2px var(--green-1);
@@ -176,6 +200,18 @@ button.navbar-toggler:focus {
   background-color: var(--green-1);
   border-color: var(--green-1);
   color: var(--fg-hover-color);
+}
+.btn-theme {
+  width: 28px;
+  height: 28px;
+  max-width: 28px;
+  max-height: 28px;
+}
+.btn-theme--light {
+  background-color: #B4CB28;
+}
+.btn-theme--dark {
+  background-color: #183052;
 }
 
 /* FooterBar */
@@ -234,6 +270,7 @@ button.navbar-toggler:focus {
 .github-profile {
   border: solid 2px var(--color-border);
   border-radius: var(--br-14);
+  min-height: 202px;
 }
 .github-profile__image {
   filter: grayscale(100%);

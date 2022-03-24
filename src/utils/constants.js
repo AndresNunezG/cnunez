@@ -1,7 +1,7 @@
 const links = [
-  {slugName: "github", icon: ['fab', 'github'], url: "https://github.com/AndresNunezG", color: '#F4F4F4'},
-  {slugName: "linkedin", icon: ['fab', 'linkedin'], url: "www.linkedin.com/in/andresnunezg", color: '#F4F4F4'},
-  {slugName: "twitter", icon: ['fab', 'twitter'], url: "https://twitter.com/_camsky", color: '#F4F4F4'},
+  {slugName: "github", icon: ['fab', 'github'], url: "https://github.com/AndresNunezG", color: 'var(--color-text)'},
+  {slugName: "linkedin", icon: ['fab', 'linkedin'], url: "www.linkedin.com/in/andresnunezg", color: 'var(--color-text)'},
+  {slugName: "twitter", icon: ['fab', 'twitter'], url: "https://twitter.com/_camsky", color: 'var(--color-text)'},
 ]
 
 const tools = [
