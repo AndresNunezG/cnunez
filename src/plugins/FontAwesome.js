@@ -13,6 +13,7 @@ import {
     faX,
     faLightbulb,
     faMoon,
+    faComment,
     } 
     from "@fortawesome/free-solid-svg-icons"
 
@@ -46,6 +47,7 @@ library.add(
     faX,
     faLightbulb,
     faMoon,
+    faComment
 )
 
 export default FontAwesomeIcon

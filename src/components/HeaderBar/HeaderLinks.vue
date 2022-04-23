@@ -3,15 +3,9 @@
         <li class="navbar-items__item ms-0 ms-auto nav-item">
             <RouterLink :to="{ name: 'Home' }"><span :class="classCurrentView('Home')">Home</span></RouterLink>
         </li>
-        <li class="navbar-items__item ms-0 ms-auto nav-item">
-            <RouterLink :to="{ name: 'About' }"><span :class="classCurrentView('About')">About</span></RouterLink>
-        </li>
-        <li class="navbar-items__item ms-0 ms-auto nav-item">
-            <RouterLink :to="{ name: 'Contact' }"><span :class="classCurrentView('Contact')">Contact</span></RouterLink>
-        </li>
         <li class="navbar-items__item ms-0 ms-auto nav-item px-lg-3 px-0">
-            <RouterLink :to="{ name: 'Projects' }" :class="'btn-custom-app btn-custom--border-green'">
-                Projects
+            <RouterLink :to="{ name: 'Projects' }">
+                <span :class="classCurrentView('Projects')">Projects</span>
             </RouterLink>
         </li>
         <li class="navbar-items__item ms-0 ms-auto nav-item">

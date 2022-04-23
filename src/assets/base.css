@@ -130,14 +130,12 @@ a:hover {
 
 /* custom components */
 .btn-custom-app {
+  background-color: transparent;
   border-radius: var(--br-14);
   color: var(--color-text);
   border: solid 1px;
   height: 2.5rem;
   padding: 0.5rem 1rem;
-}
-.btn-custom--border-green {
-  border-color: var(--green-1);
 }
 .btn-custom-app:hover {
   background-color: var(--green-1);
@@ -240,6 +238,7 @@ button.navbar-toggler:focus {
 }
 .home__subtitle {
   font-size: calc(1rem + 1vw);
+  text-align: center;
 }
 .home__subtitle span:nth-child(2) {
   color: var(--green-1);
@@ -342,7 +341,6 @@ button.navbar-toggler:focus {
   }
   .home__subtitle {
     width: 100%;
-    text-align: center;
   }
   .home__button {
     text-align: center;

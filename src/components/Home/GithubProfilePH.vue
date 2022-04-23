@@ -1,6 +1,6 @@
 <template>
     <!-- Github Profile -->
-    <div class="github-profile py-3 px-2 mt-4 mb-3">
+    <div class="github-profile py-3 px-2 mt-4 mb-5">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 col-12">
                 <div class="row align-items-center">

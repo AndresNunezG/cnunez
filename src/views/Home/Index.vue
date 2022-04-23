@@ -1,14 +1,26 @@
 <template>
-    <div class="home mt-3">
-        <span class="home__greeting d-sm-block d-flex justify-content-center">Hi there, i'm</span>
-        <h1 class="home__title">Andrés Camilo</h1>
-        <div class="home__subtitle">
-            <span class="home__subtitle-text">I'm a&nbsp;</span>
-            <span class="fw-bold font-monospace home__subtitle-text">Software development engineer</span>
-            <span class="home__subtitle-text">,&nbsp;currently building mighty things with top practices that improve human/tech relationship All this from Colombia remotely based.</span>
-        </div>
-        <div class="mt-4 home__button">
-            <RouterLink to="contact" :class="'btn-custom-app'">Get in touch</RouterLink>
-        </div>
-    </div>
+    <Home />
+    <GithubProfile />
+    <About />
+    <Techstack />
+    <Contact />
 </template>
+
+<script>
+import Home from '@/components/Home/Home.vue'
+import About from '@/components/Home/About.vue'
+import GithubProfile from '@/components/Home/GithubProfile.vue'
+import Techstack from '@/components/Home/Techstack.vue'
+import Contact from '@/components/Home/Contact.vue'
+
+export default {
+    components: {
+        Home,
+        GithubProfile,
+        About,
+        Techstack,
+        Contact,
+    }
+}
+</script>
+

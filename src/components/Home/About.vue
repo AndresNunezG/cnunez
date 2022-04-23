@@ -6,7 +6,7 @@
         </div>
     </div>
     <h2 class="section__subtitle text-center mt-2">Bio</h2>
-    <p class="m-0">
+    <p class="m-0 mb-5">
         Hi! i'm Andrés Núñez, based in Bogotá Colombia, where i was born {{ age() }} years ago.
         In 2016 I started to learn the Python programming language at university, since then
         I try to apply software solutions in a lot of problem situations to be able to solve

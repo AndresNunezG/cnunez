@@ -12,15 +12,8 @@ const routes = [
   {
     path: '/projects',
     name: 'Projects',
-    component: () => import("@/views/Projects/Index.vue")},
-  {
-    path: '/about',
-    name: 'About',
-    component: () => import("@/views/About/Index.vue")},
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: () => import("@/views/Contact/Index.vue")},
+    component: () => import("@/views/Projects/Index.vue")
+  },
   {
     path: '/:pathMatch(.*)',
     redirect: { name: 'Home' }},

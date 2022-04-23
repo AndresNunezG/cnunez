@@ -6,7 +6,7 @@
         </div>
     </div>
     <h2 class="section__subtitle text-center mt-2">&nbsp;Teckstack</h2>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mb-5">
         <div
             v-for="tech in techstack"
             :key="tech.slugName"
