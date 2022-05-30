@@ -7,7 +7,7 @@
             <span class="fw-bold font-monospace home__subtitle-text">software development engineer</span>
             <span class="home__subtitle-text">,&nbsp;currently building mighty things with top practices that improve human/tech relationship All this from Colombia remotely based.</span>
         </div>
-        <div class="mt-4 home__button">
+        <div class="home__button mt-4">
             <button @click="scrollToContact" :class="'btn-custom-app'">Get in touch</button>
         </div>
     </div>

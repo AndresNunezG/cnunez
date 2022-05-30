@@ -6,7 +6,7 @@
         </div>
     </div>
     <h2 class="section__subtitle text-center mt-2">Get In Touch</h2>
-    <div class="row">
+    <div class="row mb-5">
         <form ref="contactForm" id="contact-form" @submit.prevent="validateContactForm">
             <div class="row justify-content-center">
                 <div class="form-group mb-3 col-md-8 col-12">

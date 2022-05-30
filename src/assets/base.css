@@ -341,7 +341,7 @@ button.navbar-toggler:focus {
   }
   .miniature {
     margin-left: -1.4vw;
-  }
+  } 
 }
 
 @media (max-width: 1024px) {
@@ -349,9 +349,6 @@ button.navbar-toggler:focus {
   .navbar-items__item {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
-  }
-  .btn-custom-app {
-    margin-top: 10rem !important;
   }
 }
 
@@ -377,5 +374,9 @@ button.navbar-toggler:focus {
   }
   .miniature {
     margin-left: -2.5vw;
+  }
+  /* Contact */
+  .btn--submit {
+    min-width: 100%;
   }
 }
