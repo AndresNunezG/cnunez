@@ -297,6 +297,27 @@ button.navbar-toggler:focus {
   height: 5vw;
 }
 
+/* Contact */
+
+.contact-form__input {
+  border: solid 2px var(--green-1);
+}
+
+.contact-form__input:focus {
+  border-color: var(--green-1);
+  box-shadow: 0 0 0 0.25rem rgb(65 184 31 / 25%);
+}
+
+.btn--submit {
+  background-color: var(--green-1);
+}
+
+.btn--submit:hover {
+  color: var(--fg-hover-color);
+}
+
+/* MEDIA QUERIES */
+
 @media (min-width: 1024px) {
   /* Home */
   .home__subtitle {
