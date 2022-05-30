@@ -5,14 +5,15 @@
             <font-awesome-icon :icon="['fas', 'comment']" :style="{ color: '#FFFFFF'}"></font-awesome-icon>
         </div>
     </div>
-    <h2 class="section__subtitle text-center mt-2">Contact</h2>
+    <h2 class="section__subtitle text-center mt-2">Get In Touch</h2>
     <div class="row">
-        <form id="first_name contact-form" @submit.prevent="validateContactForm">
+        <form ref="contactForm" id="contact-form" @submit.prevent="validateContactForm">
             <div class="row justify-content-center">
                 <div class="form-group mb-3 col-md-8 col-12">
                     <label class="form-label">Email&nbsp;<span class="monospace">*</span></label>
                     <input
                         v-model="contactForm.email"
+                        name="user_email"
                         type="email"
                         class="form-control contact-form__input input rounded-pill"
                         :class="{ 'input-error': contactForm.errorEmail }"
@@ -28,6 +29,7 @@
                     <input
                         v-model="contactForm.message"
                         type="text"
+                        name="user_message"
                         class="form-control contact-form__input rounded-pill"
                         :class="{ 'input-error': contactForm.errorMessage }"
                         @click="() => contactForm.errorMessage = null"
@@ -38,7 +40,21 @@
                     </div>
                 </div>
                 <div class="form-group col-md-8 col-12">
-                    <button type="submit" class="btn px-4 btn--submit rounded-pill">Submit</button>
+                    <input type="submit" class="btn px-5 btn--submit rounded-pill" value="Send" />
+                </div>
+            </div>
+            <div v-if="emailSended && !emailError" class="row justify-content-center">
+                <div class="col-md-8 col-12 my-3">
+                    <div class="alert alert-success">
+                        Thanks you for your message. We will be in touch soon
+                    </div>
+                </div>
+            </div>
+            <div v-if="emailSended && emailError && emailResponse" class="row justify-content-center">
+                <div class="col-md-8 col-12 my-3">
+                    <div class="alert alert-danger">
+                        Ops! something went wrong, try again later: {{ emailResponse }}
+                    </div>
                 </div>
             </div>
         </form>
@@ -46,6 +62,12 @@
 </template>
 
 <script>
+import emailjs from '@emailjs/browser';
+
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
 export default {
     data() {
         return {
@@ -54,7 +76,10 @@ export default {
                 message: "",
                 errorEmail: null,
                 errorMessage: null,
-            }
+            },
+            emailResponse: "",
+            emailError: null,
+            emailSended: false,
         }
     },
     methods: {
@@ -75,8 +100,21 @@ export default {
             }
         },
         sendContactEmail () {
-            const { email, message } = this.contactForm
-            console.log(`Sending email... ${email} ${message}`)
+            emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this.$refs.contactForm, EMAILJS_PUBLIC_KEY)
+                .then((response) => {this.emailResponse = response.text; this.emailError = false})
+                .catch((error) => {this.emailResponse = error.text; this.emailError = true})
+                .finally(() => {
+                        this.emailSended = true
+                        setTimeout(() => {
+                            this.emailResponse = ""
+                            this.emailError = null
+                            this.emailSended = false
+                            this.contactForm.email = ""
+                            this.contactForm.message = ""
+                            this.contactForm.errorEmail = null
+                            this.contactForm.errorMessage = null
+                        }, 10000)
+                    })
         }
     },
 }

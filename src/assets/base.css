@@ -300,7 +300,7 @@ button.navbar-toggler:focus {
 /* Contact */
 
 .contact-form__input {
-  border: solid 2px var(--green-1);
+  border: solid 3px var(--green-1);
 }
 
 .contact-form__input:focus {
@@ -314,6 +314,10 @@ button.navbar-toggler:focus {
 
 .btn--submit:hover {
   color: var(--fg-hover-color);
+}
+
+.btn--submit:focus {
+  box-shadow: 0 0 0 0;
 }
 
 /* MEDIA QUERIES */
