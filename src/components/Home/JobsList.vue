@@ -47,7 +47,12 @@
                 </div>
                 <!-- Role Description -->
                 <div class="col-6 order-2 border-start">
-                    <p>{{ jobSelected.roleDescription }}</p>
+                    <p
+                        v-for="(roleDescriptionItem, index) in jobSelected.roleDescription"
+                        :key="index"
+                    >
+                    <span>{{ roleDescriptionItem }}</span>
+                    </p>
                 </div>
             </div>
         </div>

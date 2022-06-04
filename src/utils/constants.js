@@ -28,12 +28,16 @@ const jobs = [
     companyName: "Global Hitss",
     websiteLink: "https://globalhitss.com/",
     roleTitle: "Intern",
-    roleDescription: `
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Eligendi non quis exercitationem culpa nesciunt nihil aut
-      nostrum explicabo reprehenderit optio amet ab temporibus
-      asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
-    `,
+    roleDescription: [
+      `Perform the requirements analysis,
+      design and partial implementation of
+      a virtual assistant for the PoC of an RPA platform
+      `,
+      `Ensure guidelines and standards in
+      the design and development of RPA virtual
+      assistants in the QA stage, reviewing their code
+      `
+    ]
   },
   {
     startDate: "Sept 2021",
@@ -41,12 +45,19 @@ const jobs = [
     companyName: "Swapps",
     websiteLink: "https://swapps.com/",
     roleTitle: "Junior Engineer",
-    roleDescription: `
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Eligendi non quis exercitationem culpa nesciunt nihil aut
-      nostrum explicabo reprehenderit optio amet ab temporibus
-      asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
-    `,
+    roleDescription: [
+      `Design and develop and deploy several frontend
+      and backend functionalities for an e-commerce
+      platform for hardware stores in the
+      Colombian valley
+      `,
+      `Codebase dependency maintenance of
+      internal and clients proyects
+      `,
+      `Direct communication with customers
+      to provide technical and product support
+      `,
+    ]
   }
 ]
 
