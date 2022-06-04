@@ -15,6 +15,11 @@ const routes = [
     component: () => import("@/views/Projects/Index.vue")
   },
   {
+    path: '/blog',
+    name: 'Blog',
+    component: () => import("@/views/Blog/Index.vue")
+  },
+  {
     path: '/:pathMatch(.*)',
     redirect: { name: 'Home' }},
 ]

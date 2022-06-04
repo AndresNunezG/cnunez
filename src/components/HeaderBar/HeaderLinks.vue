@@ -9,6 +9,11 @@
             </RouterLink>
         </li>
         <li class="navbar-items__item ms-0 ms-auto nav-item">
+            <RouterLink :to="{ name: 'Blog' }">
+                <span :class="classCurrentView('Blog')">Blog</span>
+            </RouterLink>
+        </li>
+        <li class="navbar-items__item ms-0 ms-auto nav-item">
             <div v-if="darkTheme" @click="toggleThemes()" class="btn-theme btn-theme--light rounded d-flex align-items-center justify-content-center p-1" v-pointer>
                 <font-awesome-icon :icon="['fa', 'lightbulb']" :style="{height: '20px', color: 'var(--color-background)'}"></font-awesome-icon>
             </div>
