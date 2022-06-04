@@ -143,6 +143,8 @@ a:hover {
 .btn-custom-app:hover {
   color: var(--fg-hover-color) !important;
 }
+
+.monospace,
 .monospace div,
 .monospace p,
 .monospace h3,
@@ -340,7 +342,7 @@ button.navbar-toggler:focus {
   box-shadow: 0 0 0 0;
 }
 
-/* MEDIA QUERIES */
+/* HOME MEDIA QUERIES */
 
 @media (min-width: 1024px) {
   /* Home */

@@ -61,9 +61,42 @@ const jobs = [
   }
 ]
 
+const projects = [
+  {
+    title: "Todo-Tada!",
+    description: `Newbie level Todo app that keeps your
+    tasks in the browser local storage`,
+    link: "",
+    repository: "https://google.com",
+    techs: ['Typescript', 'TailwindCSS', 'Vite']
+  },
+  {
+    title: "Crypto Data",
+    description: `data and charts of the main cryptocurrencies`,
+    link: "https://google.com",
+    repository: "https://github.com/AndresNunezG/crypto-react-app",
+    techs: ['React', 'TailwindCSS', 'ChartJS']
+  },
+  {
+    title: "Live Markdown Editor",
+    description: `Web App to edit and Preview, in real time, markdown documents`,
+    link: "https://github.com/AndresNunezG/markdown-editor",
+    repository: "https://google.com",
+    techs: ['React', 'Marked']
+  },
+  {
+    title: "This website!",
+    description: `Single page application used as portfolio, blog and contact page`,
+    link: "",
+    repository: "https://github.com/AndresNunezG/cnunez",
+    techs: ['Vue', 'Bootstrap5']
+  },
+]
+
 export {
   links,
   tools,
   techstack,
   jobs,
+  projects,
 }

@@ -18,6 +18,7 @@ import {
     faCalendar,
     faGlobe,
     faBolt,
+    faLink,
     } 
     from "@fortawesome/free-solid-svg-icons"
 
@@ -56,6 +57,7 @@ library.add(
     faCalendar,
     faGlobe,
     faBolt,
+    faLink,
 )
 
 export default FontAwesomeIcon
