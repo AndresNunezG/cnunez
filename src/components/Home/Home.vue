@@ -26,3 +26,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.home {
+    animation: 1000ms ease-out 0s 1 slideFromBottom;
+}
+</style>

@@ -402,3 +402,27 @@ button.navbar-toggler:focus {
     min-width: 100%;
   }
 }
+
+/* ANIMATIONS */
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

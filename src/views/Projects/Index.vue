@@ -18,3 +18,9 @@ export default {
 }
 </script>
 
+<style scoped>
+.projects-title {
+    animation: 500ms ease-out 0s 1 slideFromLeft;
+}
+</style>
+
