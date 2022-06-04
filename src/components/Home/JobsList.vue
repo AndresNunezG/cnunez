@@ -12,7 +12,7 @@
         </div>
         <div class="joblist-body col-12">
             <div class="row">
-                <div class="col-md-4 col-12 order-1">
+                <div class="col-md-4 col-12 order-1 mb-md-0 mb-2">
                     <!-- Role -->
                     <div class="row mx-0 px-0">
                         <div class="joblist-body__item fw-bold mx-0 px-0 mb-1 d-flex justify-content-md-end justify-content-start align-items-center">
