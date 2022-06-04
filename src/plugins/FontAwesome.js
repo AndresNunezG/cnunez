@@ -14,6 +14,10 @@ import {
     faLightbulb,
     faMoon,
     faComment,
+    faRocket,
+    faCalendar,
+    faGlobe,
+    faBolt,
     } 
     from "@fortawesome/free-solid-svg-icons"
 
@@ -47,7 +51,11 @@ library.add(
     faX,
     faLightbulb,
     faMoon,
-    faComment
+    faComment,
+    faRocket,
+    faCalendar,
+    faGlobe,
+    faBolt,
 )
 
 export default FontAwesomeIcon

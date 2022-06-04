@@ -4,7 +4,7 @@
         <h1 class="home__title">Andrés Camilo</h1>
         <div class="home__subtitle">
             <span class="home__subtitle-text">I'm a&nbsp;</span>
-            <span class="fw-bold font-monospace home__subtitle-text">software development engineer</span>
+            <span class="fw-bold font-monospace home__subtitle-text">software developer and engineer</span>
             <span class="home__subtitle-text">,&nbsp;currently building mighty things with top practices that improve human/tech relationship All this from Colombia remotely based.</span>
         </div>
         <div class="home__button mt-4">

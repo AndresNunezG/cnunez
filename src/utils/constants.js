@@ -21,8 +21,38 @@ const techstack = [
   {slugName: "git", name:"Git & Github", borderColor: "#F26524"},
 ]
 
+const jobs = [
+  {
+    startDate: "Jan 2021",
+    finishData: "Jul 20021",
+    companyName: "Global Hitss",
+    websiteLink: "https://globalhitss.com/",
+    roleTitle: "Intern",
+    roleDescription: `
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Eligendi non quis exercitationem culpa nesciunt nihil aut
+      nostrum explicabo reprehenderit optio amet ab temporibus
+      asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
+    `,
+  },
+  {
+    startDate: "Sept 2021",
+    finishData: "Present",
+    companyName: "Swapps",
+    websiteLink: "https://swapps.com/",
+    roleTitle: "Junior Engineer",
+    roleDescription: `
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Eligendi non quis exercitationem culpa nesciunt nihil aut
+      nostrum explicabo reprehenderit optio amet ab temporibus
+      asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
+    `,
+  }
+]
+
 export {
   links,
   tools,
-  techstack
+  techstack,
+  jobs,
 }

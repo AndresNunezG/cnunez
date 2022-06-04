@@ -134,7 +134,6 @@ a:hover {
   border-radius: var(--br-14);
   color: var(--color-text);
   border: solid 1px;
-  height: 2.5rem;
   padding: 0.5rem 1rem;
 }
 .btn-custom-app:hover {
@@ -297,6 +296,23 @@ button.navbar-toggler:focus {
   height: 5vw;
 }
 
+/* My Experience */
+.joblist-header__item {
+  border-bottom: 3px solid var(--color-background-mute);
+  font-weight: bold;
+}
+
+.joblist-header__item--selected {
+  border-bottom: 3px solid var(--green-1);
+  color: var(--green-1);
+}
+
+.joblist-body__item span,
+.joblist-body__item a,
+.joblist-body__item p {
+  font-weight: bold;
+}
+
 /* Contact */
 
 .contact-form__input {
@@ -329,7 +345,7 @@ button.navbar-toggler:focus {
 @media (min-width: 1024px) {
   /* Home */
   .home__subtitle {
-    max-width: 75%;
+    max-width: 80%;
   }
   /* GithubProfile */
   .github-profile__image {
