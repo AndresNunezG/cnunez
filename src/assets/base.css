@@ -271,10 +271,16 @@ button.navbar-toggler:focus {
   min-height: 202px;
 }
 .github-profile__image {
-  filter: grayscale(100%);
   width: 25vw;
   height: 25vw;
-  border: solid 1px var(--green-1);
+  border: solid 2px var(--color-border);
+  transition: 300ms;
+}
+.github-profile__image:hover {
+  border: solid 2px var(--green-1);
+}
+.github-profile__username {
+  color: var(--green-1);
 }
 
 /* UserMiniatures */
@@ -301,12 +307,10 @@ button.navbar-toggler:focus {
   border-bottom: 3px solid var(--color-background-mute);
   font-weight: bold;
 }
-
 .joblist-header__item--selected {
   border-bottom: 3px solid var(--green-1);
   color: var(--green-1);
 }
-
 .joblist-body__item span,
 .joblist-body__item a,
 .joblist-body__item p {
@@ -320,22 +324,18 @@ button.navbar-toggler:focus {
   background-color: var(--color-background-soft);
   color: var(--color-text);
 }
-
 .contact-form__input:focus {
   border-color: var(--green-1);
   box-shadow: 0 0 0 0.25rem rgb(65 184 31 / 25%);
   background-color: inherit;
   color: inherit;
 }
-
 .btn--submit {
   background-color: var(--green-1);
 }
-
 .btn--submit:hover {
   color: var(--fg-hover-color);
 }
-
 .btn--submit:focus {
   box-shadow: 0 0 0 0;
 }

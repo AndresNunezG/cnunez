@@ -20,7 +20,7 @@
                         >
                     </div>
                     <div class="col-lg d-lg-block text-lg-start col-md-6 text-center">
-                        <p @click="goToProfile" class="fw-bold mb-lg-3 mt-md-0 mt-2" v-pointer>@{{ profileData.login }}</p>
+                        <p @click="goToProfile" class="github-profile__username fw-bold mb-lg-3 mt-md-0 mt-2" v-pointer>@{{ profileData.login }}</p>
                         <p>
                             <font-awesome-icon :icon="['fa', 'location-dot']"></font-awesome-icon>
                             <span>&nbsp;{{ profileData.location }}</span>

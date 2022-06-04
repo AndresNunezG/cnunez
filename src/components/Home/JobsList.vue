@@ -5,6 +5,7 @@
                 v-for="(job, index) in jobs"
                 :key="`${job.companyName}-${index}`"
                 @click="() => jobSelectedIndex = index"
+                v-pointer
                 class="px-2 joblist-header__item"
                 :class="{ 'joblist-header__item--selected' : index === jobSelectedIndex }"
             >{{ job.companyName }}</span>
