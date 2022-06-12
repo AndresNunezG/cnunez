@@ -29,6 +29,6 @@ export default {
 
 <style scoped>
 .home {
-    animation: 1000ms ease-out 0s 1 slideFromBottom;
+    animation: 500ms ease-in-out 0s 1 slideFromBottom;
 }
 </style>

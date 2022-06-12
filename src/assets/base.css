@@ -128,7 +128,7 @@ a:hover {
   font-size: calc(1rem + 1vw);
 }
 
-/* custom components */
+/* custom classes */
 .btn-custom-app {
   background-color: transparent;
   border-radius: var(--br-14);
@@ -143,7 +143,6 @@ a:hover {
 .btn-custom-app:hover {
   color: var(--fg-hover-color) !important;
 }
-
 .monospace,
 .monospace div,
 .monospace p,
@@ -157,7 +156,9 @@ button.navbar-toggler:focus {
 .lh-21 {
   line-height: 21px !important;
 }
-
+.fg-green {
+  color: var(--green-1);
+}
 
 /* Main Layout */
 #app,
