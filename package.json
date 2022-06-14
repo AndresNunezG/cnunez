@@ -15,7 +15,9 @@
     "@fortawesome/free-solid-svg-icons": "^6.0.0",
     "@fortawesome/vue-fontawesome": "^3.0.0-5",
     "axios": "^0.26.0",
+    "dompurify": "^2.3.8",
     "firebase": "9.8.3",
+    "marked": "^4.0.17",
     "vue": "^3.2.29",
     "vue-router": "^4.0.12",
     "vuex": "^4.0.2"

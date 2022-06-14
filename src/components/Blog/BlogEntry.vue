@@ -20,6 +20,13 @@
     </div>
 </template>
 
+<script>
+export default {
+    name: 'BlogEntry',
+}
+</script>
+
+
 <style scoped>
 .entry-blog:hover {
     background-color: var(--color-background-soft);
