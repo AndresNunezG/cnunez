@@ -15,9 +15,14 @@ const routes = [
     component: () => import("@/views/Projects/Index.vue")
   },
   {
-    path: '/blog',
+    path: '/blogs',
     name: 'Blog',
     component: () => import("@/views/Blog/Index.vue")
+  },
+  {
+    path: '/blogs/:blogEntryTitle',
+    name: 'BlogEntry',
+    component: () => import("@/views/BlogEntry/Index.vue")
   },
   {
     path: '/:pathMatch(.*)',

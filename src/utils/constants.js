@@ -89,7 +89,7 @@ const projects = [
     description: `Single page application used as portfolio, blog and contact page`,
     link: "",
     repository: "https://github.com/AndresNunezG/cnunez",
-    techs: ['Vue', 'Bootstrap5']
+    techs: ['Vue', 'Bootstrap5', 'Firestore', 'Vite']
   },
 ]
 
