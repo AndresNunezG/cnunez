@@ -6,3 +6,9 @@ export function slugify (text) {
             .replace(/[^\w ]+/g, '')
             .replace(/ +/g, '-');
 }
+
+export const dateOptions = {
+    timeZone: 'America/Bogota',
+    year: 'numeric',
+    month: 'long', day: 'numeric'
+}

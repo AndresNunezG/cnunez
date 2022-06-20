@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHistory, createWebHashHistory } from "vue-router";
 import store from "@/store";
 
 const routes = [
@@ -20,7 +20,7 @@ const routes = [
     component: () => import("@/views/Blog/Index.vue")
   },
   {
-    path: '/blogs/:blogEntryTitle',
+    path: '/blogs/:blogEntryId/:blogEntryTitle',
     name: 'BlogEntry',
     component: () => import("@/views/BlogEntry/Index.vue")
   },

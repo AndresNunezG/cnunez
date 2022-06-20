@@ -53,7 +53,6 @@ export default {
     },
     methods: {
         goToBlogEntry () {
-            console.log("entra")
             const slugifyTitle = slugify(this.entry.title)
             this.$router.push(
                 {
