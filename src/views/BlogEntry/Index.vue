@@ -1,7 +1,7 @@
 <template>
-    <div v-if="blogPost">
-        <h1>{{ blogPost.title }}</h1>
-        <p>{{ blogPost.date }}</p>
+    <div v-if="blogPost" class="py-5">
+        <h1 class="fw-bold">{{ blogPost.title }}</h1>
+        <p class="monospace fg-green mb-2 pb-3 border-bottom">{{ blogPost.date }}</p>
     </div>
     <div id="entrytext"></div>
 </template>
@@ -53,3 +53,20 @@ export default {
     }
 }
 </script>
+
+<style>
+#entrytext h4,
+#entrytext h3,
+#entrytext h2,
+#entrytext h1  {
+    font-weight: bolder;
+    padding: 1.2rem 0 0.6rem 0;
+}
+#entrytext > pre code {
+    background-color: var(--color-background-soft);
+    color: var(--color-heading);
+    border: 1px solid #999;
+    display: block;
+    padding: 0px 20px 20px 20px;
+}
+</style>
