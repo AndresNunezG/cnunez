@@ -86,11 +86,13 @@ export default {
         validateContactForm () {
             if (!this.contactForm.email) {
                 this.contactForm.errorEmail = 'I need a way to answer you, email is mandatory'
+                setTimeout(() => this.contactForm.errorEmail = null, 5000)
             } else {
                 this.contactForm.errorEmail = null
             }
             if (!this.contactForm.message) {
                 this.contactForm.errorMessage = 'Let me know how we can collaborate'
+                setTimeout(() => this.contactForm.errorMessage = null, 5000)
             } else {
                 this.contactForm.errorMessage = null
             }
@@ -113,7 +115,7 @@ export default {
                             this.contactForm.message = ""
                             this.contactForm.errorEmail = null
                             this.contactForm.errorMessage = null
-                        }, 10000)
+                        }, 80000)
                     })
         }
     },

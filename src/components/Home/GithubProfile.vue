@@ -112,14 +112,16 @@ export default {
             window.open(this.profileData.html_url, '_blank').focus();
         }
     },
-    created () {
-        setTimeout(() => this.getProfile(), 1000)
+    mounted () {
         setTimeout(() => {
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
-        }, 1200)
+        }, 600)
+    },
+    created () {
+        setTimeout(() => this.getProfile(), 500)
     }
 }
 </script>

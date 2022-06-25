@@ -1,9 +1,11 @@
 <template>
-    <div v-if="blogPost" class="py-5">
-        <h1 class="fw-bold">{{ blogPost.title }}</h1>
-        <p class="monospace fg-green mb-2 pb-3 border-bottom">{{ blogPost.date }}</p>
+    <div>
+        <div v-if="blogPost" class="py-5">
+            <h1 class="fw-bold">{{ blogPost.title }}</h1>
+            <p class="monospace fg-green mb-2 pb-3 border-bottom">{{ blogPost.date }}</p>
+        </div>
+        <div id="entrytext"></div>
     </div>
-    <div id="entrytext"></div>
 </template>
 
 <script>

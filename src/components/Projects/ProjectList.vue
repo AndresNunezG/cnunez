@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row justify-content-md-start justify-content-center">
     <TransitionGroup
       appear
       @before-enter="beforeEnterAnimation"

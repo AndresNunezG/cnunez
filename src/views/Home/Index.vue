@@ -1,10 +1,12 @@
 <template>
-    <Home />
-    <GithubProfile />
-    <About />
-    <Techstack />
-    <Experience />
-    <Contact />
+    <div>
+        <Home />
+        <GithubProfile />
+        <About />
+        <Techstack />
+        <Experience />
+        <Contact />
+    </div>
 </template>
 
 <script>

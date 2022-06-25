@@ -1,20 +1,28 @@
 <template>
     <div class="miniatures">
-        <div v-for="user in usersData" :key="user.id" class="miniature d-inline-block">
-            <div class="miniature-image rounded-circle">
-                <img
-                    :src="user.avatar_url"
-                    class="rounded-circle miniature-avatar"
-                    :alt="`${user.login}-avatar`"
-                    :title="`${user.login}`"
-                    data-bs-toggle="tooltip" data-bs-placement="top"
-                >
+        <TransitionGroup
+            appear
+            @before-enter="beforeEnterAnimation"
+            @enter="enterAnimation"
+            tag="div"
+        >
+            <div v-for="(user, index) in usersData" :key="user.id" :data-index="index" class="miniature d-inline-block">
+                <div class="miniature-image rounded-circle">
+                    <img
+                        :src="user.avatar_url"
+                        class="rounded-circle miniature-avatar"
+                        :alt="`${user.login}-avatar`"
+                        :title="`${user.login}`"
+                        data-bs-toggle="tooltip" data-bs-placement="top"
+                    >
+                </div>
             </div>
-        </div>
+        </TransitionGroup>
     </div>
 </template>
 
 <script>
+import gsap from 'gsap'
 import { get } from 'axios'
 
 export default {
@@ -47,6 +55,18 @@ export default {
                         this.usersData = response.data.reverse().slice(0, 6)
                     }
                 })
+        },
+        beforeEnterAnimation(el) {
+            el.style.opacity = 0
+            el.style.transform = 'translateX(50px)'
+        },
+        enterAnimation(el, done) {
+            gsap.to(el, {
+                x: 0,
+                opacity: 1,
+                onComplete: done,
+                delay: 0.2 * el.dataset.index,
+            })
         }
     },
     created () {
