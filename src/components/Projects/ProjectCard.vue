@@ -1,6 +1,6 @@
 <template>
     <div class="project-card p-3 d-flex flex-column justify-content-between">
-        <div class="project-card__header d-flex justify-content-between align-items-center">
+        <div class="project-card__header d-flex flex-md-row flex-column justify-content-md-between align-items-start align-items-md-center">
             <h3 class="fw-bold">{{ project.title }}</h3>
             <div class="project-card__header-links">
                 <a
@@ -8,6 +8,7 @@
                     :href="project.link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    class="pe-2"
                 >
                     <font-awesome-icon :icon="['fa', 'link']"></font-awesome-icon>
                 </a>
@@ -16,7 +17,6 @@
                     :href="project.repository"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="ps-2"
                 >
                     <font-awesome-icon :icon="['fab', 'github']"></font-awesome-icon>
                 </a>
@@ -25,7 +25,7 @@
         <div class="project-cad__body">
             <p>{{ project.description }}</p>
         </div>
-        <div class="project-card__footer border-top pt-2">
+        <div class="project-card__footer border-top pt-2 d-flex flex-wrap">
             <small
                 v-for="(tech, index) in project.techs"
                 :key="index"

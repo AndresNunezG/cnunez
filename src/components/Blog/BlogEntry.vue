@@ -1,6 +1,6 @@
 <template>
     <div class="entry-blog py-4 px-2 border-bottom">
-        <div class="d-flex justify-content-between align-items-center mb-0">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-0">
             <h3 v-pointer class="entry-blog-title pb-1 mb-0">
                 <a  
                     v-if="entry.externalLink"
@@ -19,9 +19,9 @@
                 <small class="entry-date monospace fg-green">{{ entry.date }}</small>
             </div>
         </div>
-        <div class="entry-tags mb-2 d-flex">
+        <div class="entry-tags mb-2 d-flex overflow-scroll">
             <div
-                class="entry-tag__container"
+                class="entry-tag__container d-flex text-nowrap align-items-center justify-content-start"
                 v-for="(tag, index) in entry.tags"
                 :key="`${index}-${tag}`"
             >
