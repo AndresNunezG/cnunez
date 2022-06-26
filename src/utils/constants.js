@@ -67,21 +67,21 @@ const projects = [
     description: `Newbie level Todo app that keeps your
     tasks in the browser local storage`,
     link: "",
-    repository: "https://google.com",
+    repository: "",
     techs: ['Typescript', 'TailwindCSS', 'Vite']
   },
   {
     title: "Crypto Data",
     description: `data and charts of the main cryptocurrencies`,
-    link: "https://google.com",
+    link: "https://cryptocurrency-data.netlify.app/",
     repository: "https://github.com/AndresNunezG/crypto-react-app",
     techs: ['React', 'TailwindCSS', 'ChartJS']
   },
   {
     title: "Live Markdown Editor",
     description: `Web App to edit and Preview, in real time, markdown documents`,
-    link: "https://github.com/AndresNunezG/markdown-editor",
-    repository: "https://google.com",
+    link: "https://live-md-editor.netlify.app/",
+    repository: "https://github.com/AndresNunezG/markdown-editor",
     techs: ['React', 'Marked']
   },
   {

@@ -1,4 +1,27 @@
 <template>
+    <!-- toast messages -->
+    <Transition name="toast-error-message">
+        <Toast
+            v-if="contactForm.errorEmail || contactForm.errorMessage"
+            :messages="[contactForm.errorEmail, contactForm.errorMessage]"
+            type="error"
+        />
+    </Transition>
+    <Transition name="toast-error-message">
+        <Toast
+            v-if="emailSended && emailError && emailResponse"
+            :messages="['Ops! something went wrong, try again later']"
+            type="error"
+        />
+    </Transition>
+    <Transition name="toast-success-message">
+        <Toast
+            v-if="emailSended && !emailError"
+            :messages="['Thanks you for your message. We will be in touch soon']"
+            type="success"
+        />
+    </Transition>
+
     <div class="contact d-flex flex-column justify-content-center align-items-center mt-2">
         <span class="about-line"></span>
         <div class="about-sphere rounded-circle d-flex justify-content-center align-items-center">
@@ -16,13 +39,8 @@
                         name="user_email"
                         type="email"
                         class="form-control contact-form__input input rounded-pill"
-                        :class="{ 'input-error': contactForm.errorEmail }"
-                        @click="() => contactForm.errorEmail = null"
                         placeholder="Let me know your email"
                     />
-                    <div v-if="contactForm.errorEmail" class="px-2 mt-2">
-                        <span>{{ contactForm.errorEmail }}</span>
-                    </div>
                 </div>
                 <div class="form-group mb-4 col-md-8 col-12">
                     <label class="form-label">Message&nbsp;<span class="monospace">*</span></label>
@@ -31,30 +49,11 @@
                         type="text"
                         name="user_message"
                         class="form-control contact-form__input rounded-pill"
-                        :class="{ 'input-error': contactForm.errorMessage }"
-                        @click="() => contactForm.errorMessage = null"
                         placeholder="Hi! i'd like to connect"
                     />
-                    <div v-if="contactForm.errorMessage" class="px-2 mt-2">
-                        <span>{{ contactForm.errorMessage }}</span>
-                    </div>
                 </div>
                 <div class="form-group col-md-8 col-12">
                     <input type="submit" class="btn px-5 btn--submit rounded-pill" value="Send" />
-                </div>
-            </div>
-            <div v-if="emailSended && !emailError" class="row justify-content-center">
-                <div class="col-md-8 col-12 my-3">
-                    <div class="alert alert-success">
-                        Thanks you for your message. We will be in touch soon
-                    </div>
-                </div>
-            </div>
-            <div v-if="emailSended && emailError && emailResponse" class="row justify-content-center">
-                <div class="col-md-8 col-12 my-3">
-                    <div class="alert alert-danger">
-                        Ops! something went wrong, try again later: {{ emailResponse }}
-                    </div>
                 </div>
             </div>
         </form>
@@ -64,11 +63,16 @@
 <script>
 import emailjs from '@emailjs/browser';
 
+import Toast from '@/components/Toast.vue'
+
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
 const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 export default {
+    components: {
+        Toast,
+    },
     data() {
         return {
             contactForm: {
@@ -85,7 +89,7 @@ export default {
     methods: {
         validateContactForm () {
             if (!this.contactForm.email) {
-                this.contactForm.errorEmail = 'I need a way to answer you, email is mandatory'
+                this.contactForm.errorEmail = 'Email is mandatory'
                 setTimeout(() => this.contactForm.errorEmail = null, 5000)
             } else {
                 this.contactForm.errorEmail = null
@@ -115,7 +119,7 @@ export default {
                             this.contactForm.message = ""
                             this.contactForm.errorEmail = null
                             this.contactForm.errorMessage = null
-                        }, 80000)
+                        }, 8000)
                     })
         }
     },
@@ -123,8 +127,43 @@ export default {
 </script>
 
 <style scoped>
-.input-error {
-    border-color: #DC3444;
-    box-shadow: 0 0 0 0.25rem rgb(220 52 68 / 25%);
+/* TOAST SUCCESS */
+.toast-success-message-enter-from {
+    opacity: 0;
+    transform: translateY(-60px);
+}
+.toast-success-message-enter-to {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.toast-success-message-enter-active {
+    transition: all 0.3s ease;
+}
+.toast-success-message-leave-from {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.toast-success-message-leave-to {
+    opacity: 0;
+    transform: translateY(-60px);
+}
+.toast-success-message-leave-active {
+    transition: all 0.3s ease;
+}
+
+/* TOAST ERROR */
+.toast-error-message-enter-active {
+    animation: wobble 0.8s ease;
+}
+.toast-error-message-leave-from {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.toast-error-message-leave-to {
+    opacity: 0;
+    transform: translateY(-60px);
+}
+.toast-error-message-leave-active {
+    transition: all 0.3s ease;
 }
 </style>
