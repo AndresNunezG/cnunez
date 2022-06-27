@@ -1,6 +1,6 @@
 const links = [
   {slugName: "github", icon: ['fab', 'github'], url: "https://github.com/AndresNunezG", color: 'var(--color-text)'},
-  {slugName: "linkedin", icon: ['fab', 'linkedin'], url: "www.linkedin.com/in/andresnunezg", color: 'var(--color-text)'},
+  {slugName: "linkedin", icon: ['fab', 'linkedin'], url: "https://linkedin.com/in/andresnunezg", color: 'var(--color-text)'},
   {slugName: "twitter", icon: ['fab', 'twitter'], url: "https://twitter.com/_camsky", color: 'var(--color-text)'},
 ]
 
