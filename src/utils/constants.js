@@ -63,12 +63,17 @@ const jobs = [
 
 const projects = [
   {
-    title: "Todo-Tada!",
-    description: `Newbie level Todo app that keeps your
-    tasks in the browser local storage`,
+    title: "Atenea",
+    description:`Use ChatGPT 3.5 Turbo power in terminal, rendering using markdown`,
     link: "",
-    repository: "",
-    techs: ['Typescript', 'TailwindCSS', 'Vite']
+    repository: "https://github.com/AndresNunezG/Atenea",
+    techs: ["Python", "Typer", "Rich"]
+  },
+  {
+    title: "Vue Password Generator",
+    description: `Generate secure passwords choosing different lengths and sets of characters`,
+    repository: "https://github.com/AndresNunezG/VuePasswordGenerator",
+    techs: ["Vue", "Vite", "Pure CSS responsive"]
   },
   {
     title: "Crypto Data",
