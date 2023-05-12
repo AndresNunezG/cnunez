@@ -27,7 +27,7 @@
                         </p>
                         <p>
                             <font-awesome-icon :icon="['fa', 'building']"></font-awesome-icon>
-                            <span>&nbsp;@{{ profileData.company }}</span>
+                            <span>&nbsp;{{ profileData.company }}</span>
                         </p>
                         <p>
                             <font-awesome-icon :icon="['fa', 'book']"></font-awesome-icon>

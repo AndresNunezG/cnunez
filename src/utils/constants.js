@@ -63,6 +63,20 @@ const jobs = [
 
 const projects = [
   {
+    title: "Product Feedback App",
+    description:`Frontend mentor product feedback app`,
+    link: "",
+    repository: "https://github.com/AndresNunezG/product-feedback-app",
+    techs: ["Vue", "Pure CSS"]
+  },
+  {
+    title: "E-commerce Vue template",
+    description:`Responsive E-commerce template with product list, cart and resume`,
+    link: "",
+    repository: "https://github.com/AndresNunezG/shop",
+    techs: ["TypeScript", "Vue", "Bootstrap", "Vite"]
+  },
+  {
     title: "Atenea",
     description:`Use ChatGPT 3.5 Turbo power in terminal, rendering using markdown`,
     link: "",
